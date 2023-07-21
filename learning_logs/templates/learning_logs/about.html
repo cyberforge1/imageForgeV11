@@ -1,0 +1,101 @@
+{% extends 'learning_logs/base.html' %} {% load static %} {% block content %}
+<style>
+  body {
+    background-image: url("{% static 'explosion2.png' %}");
+    background-size: cover;
+    background-position: 100% 40%; /* Adjusted vertical position */
+    background-repeat: no-repeat;
+    min-height: calc(
+      100vh - 100px
+    ); /* Adjust the height based on your navbar and footer heights */
+    margin: 0;
+    padding: 0;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .card-body {
+    overflow: auto;
+  }
+
+  .text-container {
+    max-height: 100%;
+    overflow: auto;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card mb-3" style="height: 30vh">
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <div
+            class="border border-secondary rounded p-3 text-center text-container"
+            style="width: 100%"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse rhoncus dapibus arcu, non tempus ligula aliquet eu.
+              Vivamus scelerisque est in velit sagittis, vel dignissim turpis
+              varius. Nullam ultrices, nunc nec mattis accumsan, ipsum nibh
+              tempus metus, in varius turpis magna at velit. Aenean semper
+              semper felis, et consectetur risus ullamcorper sed. Donec id neque
+              urna. Cras a diam a mi auctor venenatis. Fusce tincidunt, mi in
+              efficitur rhoncus, nisi risus auctor nisi, sit amet faucibus ipsum
+              neque sed urna.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse rhoncus dapibus arcu, non tempus ligula aliquet eu.
+              Vivamus scelerisque est in velit sagittis, vel dignissim turpis
+              varius. Nullam ultrices, nunc nec mattis accumsan, ipsum nibh
+              tempus metus, in varius turpis magna at velit. Aenean semper
+              semper felis, et consectetur risus ullamcorper sed. Donec id neque
+              urna. Cras a diam a mi auctor venenatis. Fusce tincidunt, mi in
+              efficitur rhoncus, nisi risus auctor nisi, sit amet faucibus ipsum
+              neque sed urna.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4"></div>
+      <!-- 20% gap between boxes -->
+      <div class="card" style="height: 30vh">
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <div
+            class="border border-secondary rounded p-3 text-center text-container"
+            style="width: 100%"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse rhoncus dapibus arcu, non tempus ligula aliquet eu.
+              Vivamus scelerisque est in velit sagittis, vel dignissim turpis
+              varius. Nullam ultrices, nunc nec mattis accumsan, ipsum nibh
+              tempus metus, in varius turpis magna at velit. Aenean semper
+              semper felis, et consectetur risus ullamcorper sed. Donec id neque
+              urna. Cras a diam a mi auctor venenatis. Fusce tincidunt, mi in
+              efficitur rhoncus, nisi risus auctor nisi, sit amet faucibus ipsum
+              neque sed urna.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse rhoncus dapibus arcu, non tempus ligula aliquet eu.
+              Vivamus scelerisque est in velit sagittis, vel dignissim turpis
+              varius. Nullam ultrices, nunc nec mattis accumsan, ipsum nibh
+              tempus metus, in varius turpis magna at velit. Aenean semper
+              semper felis, et consectetur risus ullamcorper sed. Donec id neque
+              urna. Cras a diam a mi auctor venenatis. Fusce tincidunt, mi in
+              efficitur rhoncus, nisi risus auctor nisi, sit amet faucibus ipsum
+              neque sed urna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
